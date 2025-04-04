@@ -190,13 +190,14 @@ nav .right a span {
 
 .contact-section form { 
     font-family: 'Poppins', sans-serif;
-    border: 1.5px solid var(--link-color);
+    
     background-color: transparent;
     padding: 20px;
     margin: 0 auto; 
     width: 100%; 
     max-width: 1100px; 
     border-radius: 8px; 
+    
 }
 
 .contact-section form input,
@@ -227,7 +228,6 @@ nav .right a span {
     margin-top: 10px;
 }
 /* Footer*/
-
 .footer-section {
     width: 100%;
     
@@ -311,7 +311,7 @@ nav .right a span {
     .skills-section .cells .cell{
         padding: 10px 15px;
         margin: 5px; 
-    
+    }
     
 
     /* SECTION 4: Contact */
@@ -319,6 +319,64 @@ nav .right a span {
         width: 500px; 
         padding: 0 20px;
     }
+}
+@media (max-width:375px){
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+        width: 100%;
+    }
+    nav .right a {
+        font-size: 22px;
+    }
+    /* SECTION 3: Projects */
+    .projects-section  {
+        text-align: center;
+    }
+    .projects-section .group {
+        flex-direction: column;
+    }
+    .projects-section .group .video {
+        align-items: center;
+    }
+    /* Footer*/
+    .footer-section {
+        width: 100%;
+        background-color: rgb(230, 104, 59);
+        opacity: 90%;
+        padding: 15px 0;
+        text-align: center;
+        position: relative; 
+    }
+    /* SECTION 2: Skills */
+    .skills-section .cells {
+        display: flex;
+        justify-content: center;  
+    }
+    .skills-section .cells .cell{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        gap: 5px;
+    
+        padding: 5px;
+        margin: 5px 5px;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        
+    }
+    .skills-section .cells .cell img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        border-radius: 2px;
+    }
+    
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+
+
 }
 
 
